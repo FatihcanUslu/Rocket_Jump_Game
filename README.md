@@ -1,10 +1,10 @@
 # Rocket_Jump_Game
 
-#Oynanis
+#Oynanis ve Ilham
 
 Oyunumuzun amacı siyah engellere çarpmadan elimizdeki roket atarı kullanarak mavi renkli kapıya kadar ulaşıp oyunu bitirmektir. Mouse sol click tuşu ile attığımız roketlerin
 patlama yakınlığına, açısına, yönüne, kuvvetine bağlı olarak oyuncuya Force uygulamaktadır. Oyuncumuz engellere takılmamak ve platformlara tırmanıp mavi kapıya ulaşmak için
-bu roketi kullanacaktır. Eğer oyuncumuz siyah renkli engellere takılırsa yada oyundan aşağıya düşerse karakter hareketi sonlanıcak ve 3 saniye sonra oyun baştan başlatılacaktır. Oyunda ileriye gidildikce sonucu etkilemeyen bir score sayacida bulunmaktadir.
+bu roketi kullanacaktır. Eğer oyuncumuz siyah renkli engellere takılırsa yada oyundan aşağıya düşerse karakter hareketi sonlanıcak ve 3 saniye sonra oyun baştan başlatılacaktır. Oyunda ileriye gidildikce sonucu etkilemeyen bir score sayacida bulunmaktadir. Bu oyunu tasarlarken Team Fortress 2 oyunundaki Soldier karakterinden ilham alinmistir.
 
 #Siyah engel
 ![engel](https://user-images.githubusercontent.com/72496488/204592467-efabf0c9-4420-4b80-9a31-9a70bc1df179.PNG)
