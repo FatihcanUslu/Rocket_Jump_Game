@@ -31,8 +31,11 @@ bu roketi kullanacaktır. Eğer oyuncumuz siyah renkli engellere takılırsa yad
 
 #Gelistirilen Kisimlar ve Kodlanan Scriptler
 -Genel hareket mekanikleri, roket atar tasarimi ve kullanimi, ses efektleri
--camerafollowthe_player.cs, EndTrigger.cs, explotion.cs, FPSCamera.cs, Gun.cs, MenuControl.cs, player_collision.cs, player_movement.cs, score.cs, GameManager.cs
+-camerafollowthe_player.cs, EndTrigger.cs, explotion.cs, FPSCamera.cs, Gun.cs, player_collision.cs, player_movement.cs, score.cs,
 
 #Takım Arkadasi Tarafindan Gelistirilen Kisimlar ve Kodlanan Scriptler
-- degistir
-- degistir
+- Esc menusu ve diğer menu ayarlamalari yapildi
+- Pausemenu.cs, MenuControl.cs,  GameManager.cs
+
+Oyunu oynamak için :
+https://fatihcan-uslu.itch.io/rocket-jump
