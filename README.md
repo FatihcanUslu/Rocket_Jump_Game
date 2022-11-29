@@ -1,5 +1,7 @@
 # Rocket_Jump_Game
+
 #Oynanis
+
 Oyunumuzun amacı siyah engellere çarpmadan elimizdeki roket atarı kullanarak mavi renkli kapıya kadar ulaşıp oyunu bitirmektir. Mouse sol click tuşu ile attığımız roketlerin
 patlama yakınlığına, açısına, yönüne, kuvvetine bağlı olarak oyuncuya Force uygulamaktadır. Oyuncumuz engellere takılmamak ve platformlara tırmanıp mavi kapıya ulaşmak için
 bu roketi kullanacaktır. Eğer oyuncumuz siyah renkli engellere takılırsa yada oyundan aşağıya düşerse karakter hareketi sonlanıcak ve 3 saniye sonra oyun baştan başlatılacaktır. Oyunda ileriye gidildikce sonucu etkilemeyen bir score sayacida bulunmaktadir.
