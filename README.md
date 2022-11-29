@@ -22,6 +22,7 @@ bu roketi kullanacaktır. Eğer oyuncumuz siyah renkli engellere takılırsa yad
 ![genel foto](https://user-images.githubusercontent.com/72496488/204594079-a24291e1-5108-4f19-a56b-a3a62d96dbb1.PNG)
 
 #Esc 
+
 ![esc tusu](https://user-images.githubusercontent.com/72496488/204653241-b91cc5a6-3f15-451d-a00a-5fb2b9f8fce4.PNG)
 
 -Mission Completed ibaresi Unity içerisinde hazırladığımız bir animasyondur.
