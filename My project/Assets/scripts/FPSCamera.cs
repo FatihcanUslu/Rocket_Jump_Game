@@ -5,10 +5,8 @@ using UnityEngine;
 public class FPSCamera : MonoBehaviour
 {
     public Transform player;
-    public float Sensitivity=2f;
-    float cameraVerticalRotation=0f;
-    bool CursorLocked=true;
-
+    public float Mouse_Sensitivity=2f;
+    float Camera_Vertical_Rotation=0f;
 
     // Start is called before the first frame update
     void Start()
@@ -20,16 +18,16 @@ public class FPSCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float inputx=Input.GetAxis("Mouse X")*Sensitivity;
-        float inputy=Input.GetAxis("Mouse Y")*Sensitivity;
-        
+        float input_for_x=Input.GetAxis("Mouse X")*Mouse_Sensitivity;
+        float input_for_y=Input.GetAxis("Mouse Y")*Mouse_Sensitivity;
+        float arbitraj=90f;
         //Rotate the camera around x axis
-        cameraVerticalRotation-=inputy;
-        cameraVerticalRotation=Mathf.Clamp(cameraVerticalRotation,-90f,90f);// kameranın x eksenindeki hareketi sınırlandırılır
-        transform.localEulerAngles=Vector3.right*cameraVerticalRotation;
+        Camera_Vertical_Rotation-=input_for_y;
+        Camera_Vertical_Rotation=Mathf.Clamp(Camera_Vertical_Rotation,-arbitraj,arbitraj);// kameranın x eksenindeki hareketi sınırlandırılır
+        transform.localEulerAngles=Vector3.right*Camera_Vertical_Rotation;
 
         //Rotate the player and the camera in the y axis
-        player.Rotate(Vector3.up*inputx);//hem obje hem de camera child olduğu için ikisi içinde y yönünde hareket sağlanmış olur
+        player.Rotate(Vector3.up*input_for_x);//hem obje hem de camera child olduğu için ikisi içinde y yönünde hareket sağlanmış olur
 
     }
 }

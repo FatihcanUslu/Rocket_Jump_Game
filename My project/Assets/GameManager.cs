@@ -7,12 +7,12 @@ public class GameManager : MonoBehaviour
 {
     bool gameHasEnded=false;
     public float DelayTime=3f;
-    public GameObject completeLevelUI;
+    public GameObject completeLevel;
     
     public void CompleteLevel()
     {
         Debug.Log("Level Completed !!!");
-        completeLevelUI.SetActive(true);
+        completeLevel.SetActive(true);
     }
     public void EndGame()
     {
