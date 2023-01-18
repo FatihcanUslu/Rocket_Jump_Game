@@ -5,39 +5,47 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public static bool  GameIsPaused = false;
+    private static bool  GameIsPaused = false;
 
     public GameObject PauseMenuUI;
 
-    void Update()
+    void Start()
     {
-        if(Input.GetAxis("Submit")){
-            if (GameIsPaused)
-                {
-                Resume();
-                }
-            else
-                {
-                Pause();
-                 }
-        }
-
+        PauseMenuUI.GetComponent<Canvas>().enabled=false;
+    }
+    void FixedUpdate()
+    {
+        //float Escape=Input.GetAxis("Cancel");
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+        
+         if(GameIsPaused){
+             Resume();
+             }
+             
+         else{
+             Pause();
+             }
+        GameIsPaused = !GameIsPaused;
+         
+     }
+            
     }
 
 void Resume(){
-    PauseMenuUI.SetActive(false);
+    PauseMenuUI.GetComponent<Canvas>().enabled=false;
     Time.timeScale = 1f;
     GameIsPaused= false;
 }
 void Pause()
 {
-    PauseMenuUI.SetActive(true);
-    Time.timeScale = 0f;
+    PauseMenuUI.GetComponent<Canvas>().enabled=true;
+    Time.timeScale = 0.5f;
     GameIsPaused = true;
 }
  public void Restart(){ 
 
-    SceneManagener.LoadScene(SceneManagener.GetActiveScene(),name);
+    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
  }
 
 public void QuitGame(){

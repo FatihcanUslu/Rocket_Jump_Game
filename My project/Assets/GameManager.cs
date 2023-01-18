@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     bool gameHasEnded=false;
     public float DelayTime=3f;
     public GameObject completeLevelUI;
+    
     public void CompleteLevel()
     {
         Debug.Log("Level Completed !!!");

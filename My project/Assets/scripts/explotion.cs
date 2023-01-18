@@ -24,7 +24,7 @@ public class explotion : MonoBehaviour
         if (rb !=null)
         {
             Debug.Log("Explosion occur");
-            AudioSource.PlayClipAtPoint(exp, this.gameObject.transform.position);//audiosource.play() destroy bitmeden çalışmazsa hiç çalışmaz.
+            AudioSource.PlayClipAtPoint(exp, this.gameObject.transform.position,50f);//audiosource.play() destroy bitmeden çalışmazsa hiç çalışmaz.
             
             //gameObject.GetComponent<AudioSource>().Play();
             rb.AddExplosionForce(force,expPos,expradius,0.05f,ForceMode.Impulse);

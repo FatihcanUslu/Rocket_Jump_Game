@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -8511772314485281740}
   m_Layer: 0
   m_Name: Rocket
-  m_TagString: Untagged
+  m_TagString: Rocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,7 +131,7 @@ MonoBehaviour:
   force: 30
   expradius: 30
   life: 5
-  exp: {fileID: 8300000, guid: 62ae13e9db93c704790ac72dbeaee609, type: 3}
+  exp: {fileID: 8300000, guid: 96918c3767ad47d4cbbcbdd9d03e541a, type: 3}
 --- !u!82 &-8511772314485281740
 AudioSource:
   m_ObjectHideFlags: 0
@@ -142,7 +142,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 62ae13e9db93c704790ac72dbeaee609, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

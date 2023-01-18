@@ -33,7 +33,7 @@ public class player_movement : MonoBehaviour
         Vector3 move = new Vector3(Horizontal,0.0f,Vertical)*Time.deltaTime*speed;
         tr.Translate(move,Space.Self);
         //rb.AddForce(move*speed);
-
+        
         if (Input.GetButton("Jump") && ontheground==true)
         {
             rb.AddForce(new Vector3(0,5,0),ForceMode.Impulse);
