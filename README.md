@@ -1,5 +1,8 @@
 # Rocket_Jump_Game
 
+Oyunu oynamak için :
+https://fatihcan-uslu.itch.io/rocket-jump
+
 #Oynanis ve Ilham
 
 Oyunumuzun amacı siyah engellere çarpmadan elimizdeki roket atarı kullanarak mavi renkli kapıya kadar ulaşıp oyunu bitirmektir. Mouse sol click tuşu ile attığımız roketlerin
@@ -33,6 +36,7 @@ bu roketi kullanacaktır. Eğer oyuncumuz siyah renkli engellere takılırsa yad
 -space tuşu ile zıplama
 -mouse sol click tusu ile roket atis
 
+#Vize
 #Gelistirilen Kisimlar ve Kodlanan Scriptler
 -Genel hareket mekanikleri, roket atar tasarimi ve kullanimi, ses efektleri
 -camerafollowthe_player.cs, EndTrigger.cs, explotion.cs, FPSCamera.cs, Gun.cs, player_collision.cs, player_movement.cs, score.cs,
@@ -41,5 +45,10 @@ bu roketi kullanacaktır. Eğer oyuncumuz siyah renkli engellere takılırsa yad
 - Esc menusu ve diğer menu ayarlamalari yapildi
 - Pausemenu.cs, MenuControl.cs,  GameManager.cs
 
-Oyunu oynamak için :
-https://fatihcan-uslu.itch.io/rocket-jump
+#Final
+#Gelistirilen Kisimlar 
+-ses ve müzik, oynanabilir sahneler, animasyon
+
+#Takım Arkadasi Tarafindan Gelistirilen Kisimlar
+-ana menü, kayıt alma
+
