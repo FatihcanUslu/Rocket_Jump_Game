@@ -8,8 +8,11 @@ public class Keep_The_Music : MonoBehaviour
 
     void Awake()
     {
-        music=this;
-        DontDestroyOnLoad(this.gameObject);
+        if (music == null)
+        {
+            music = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
     }
     
 

@@ -7,12 +7,25 @@ public class GameManager : MonoBehaviour
 {
     bool gameHasEnded=false;
     public float DelayTime=3f;
-    public GameObject completeLevel;
-    
+    public GameObject completeLevelUI;
+    private void Start()
+    {
+        if (!PlayerPrefs.HasKey("savedLevel"))
+        {
+            PlayerPrefs.SetInt("savedLevel", SceneManager.GetActiveScene().buildIndex);
+        }
+        
+        if (SceneManager.GetActiveScene().buildIndex > PlayerPrefs.GetInt("savedLevel"))
+        {
+            PlayerPrefs.SetInt("savedLevel", SceneManager.GetActiveScene().buildIndex);
+        }
+        
+    }
+
     public void CompleteLevel()
     {
         Debug.Log("Level Completed !!!");
-        completeLevel.SetActive(true);
+        completeLevelUI.SetActive(true);
     }
     public void EndGame()
     {
